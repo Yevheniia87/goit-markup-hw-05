@@ -119,6 +119,8 @@ img {
   color: var(--logo-nav-header);
   padding-top: 32px;
   padding-bottom: 32px;
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navigation-list-link:hover,
 .navigation-list-link:focus {
@@ -129,9 +131,10 @@ img {
   height: 12px;
   fill: #757575;
   margin-right: 10px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mail-link {
-  display: block;
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.143;
@@ -141,6 +144,7 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--mail-tel);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mail-link:hover,
 .mail-link:focus {
@@ -155,9 +159,10 @@ img {
   height: 16px;
   fill: #757575;
   margin-right: 10px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .tel-link {
-  display: block;
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.143;
@@ -165,6 +170,7 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--mail-tel);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .tel-link:hover,
 .tel-link:focus {
@@ -206,8 +212,8 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-right: 452px;
   padding-left: 452px;
+  padding-right: 452px;
 }
 .headline {
   font-weight: 900;
@@ -412,6 +418,7 @@ img {
   align-items: center;
   background-color: #ffffff;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-list-link:hover,
 .social-list-link:focus {
@@ -421,6 +428,7 @@ img {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-list-link:hover .social-list-icon,
 .social-list-icon:focus .social-list-icon {
@@ -469,6 +477,7 @@ img {
   align-items: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-list-link:hover,
 .client-list-link:focus {
@@ -476,6 +485,7 @@ img {
 }
 .client-list-icon {
   fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-list-link:hover .client-list-icon,
 .client-list-link:focus .client-list-icon {
@@ -528,6 +538,7 @@ img {
 }
 .contacts-list-link {
   color: var(--main-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts_list {
   color: rgba(255, 255, 255, 0.6);
@@ -561,11 +572,16 @@ img {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social-list-icon {
   width: 20px;
   height: 20px;
   fill: #ffffff;
+}
+.footer-social-list-link:hover .footer-social-list-icon,
+.footer-social-list-link:focus .footer-social-list-icon {
+  fill: var(--footer-icon);
 }
 .footer-social-list-item:not(:last-child) {
   margin-right: 10px;
@@ -608,6 +624,7 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-sub-btn {
   display: flex;
@@ -678,6 +695,7 @@ img {
 .modal-close-btn:hover .close-btn-icon,
 .modal-close-btn:focus .close-btn-icon {
   fill: var(--address-hover-focus);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -713,10 +731,15 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   cursor: pointer;
+  margin-top: 5px;
+  padding-left: 40px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal-form-input:hover,
 .modal-form-input:focus {
   outline: none;
   border-color: var(--address-hover-focus);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-input-icon {
   left: 15px;
@@ -727,8 +750,10 @@ img {
   height: 12px;
   cursor: pointer;
 }
+.modal-form-input:hover + .modal-form-input-icon,
 .modal-form-input:focus + .modal-form-input-icon {
   fill: var(--address-hover-focus);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-message {
   font-weight: 500;
@@ -744,14 +769,17 @@ img {
   padding: 12px 16px;
   cursor: pointer;
 }
+.modal-form-message:hover,
 .modal-form-message:focus {
-  outline: none;
+  outline: transparent;
   border-color: var(--address-hover-focus);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-message::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 .modal-checkbox {
+  text-align: center;
   margin-top: 10px;
 }
 .modal-form-label-policy::before {
@@ -772,6 +800,14 @@ img {
   border-radius: 2px;
   border: none;
   background-image: url(../img/icon-check.svg);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-image 250 ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 250 ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-form-check-policy:focus + .modal-form-label-policy::before {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .modal-form-label-policy {
   display: block;
@@ -809,4 +845,6 @@ img {
   background: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
