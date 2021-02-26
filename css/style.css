@@ -129,6 +129,11 @@ img {
 .navigation-list-link:focus {
   color: var(--address-hover-focus);
 }
+.contacts {
+  display: flex;
+  align-items: flex-end;
+  margin-left: auto;
+}
 .mail-list-icon {
   width: 16px;
   height: 12px;
@@ -521,6 +526,7 @@ img {
   color: var(--logo-span);
   text-decoration: none;
   width: 145px;
+  margin-bottom: 20px;
 }
 .address {
   font-weight: 500;
@@ -544,7 +550,7 @@ img {
 }
 .footer-social-block {
   display: block;
-  margin-left: 70px;
+  margin-left: 72px;
 }
 .footer-social-title {
   display: block;
