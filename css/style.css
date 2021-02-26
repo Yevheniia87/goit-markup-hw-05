@@ -749,6 +749,7 @@ img {
   width: 15px;
   height: 12px;
   cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-input:hover + .modal-form-input-icon,
 .modal-form-input:focus + .modal-form-input-icon {
