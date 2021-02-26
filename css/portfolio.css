@@ -98,10 +98,6 @@ img {
 .navigation-list {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  position: relative;
 }
 .navigation-list-item:not(:last-child) {
   margin-right: 50px;
@@ -114,12 +110,19 @@ img {
   color: var(--logo-nav-header);
   padding-top: 32px;
   padding-bottom: 32px;
+
   position: relative;
+
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navigation-list-link:hover,
 .navigation-list-link:focus {
   color: var(--btn);
+}
+.contacts {
+  display: flex;
+  align-items: flex-end;
+  margin-left: auto;
 }
 .mail-list-icon {
   width: 16px;
@@ -165,7 +168,7 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--mail-tel);
-  transition: color 250 ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .tel-link:hover,
 .tel-link:focus {
@@ -330,6 +333,7 @@ img {
   color: var(--main-color);
 }
 .logo {
+  display: block;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -338,12 +342,10 @@ img {
   color: var(--logo-span);
   text-decoration: none;
   width: 145px;
-}
-.logo-bottom {
   margin-bottom: 20px;
 }
+
 .address {
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.714;
@@ -365,7 +367,7 @@ img {
 }
 .footer-social-block {
   display: block;
-  margin-left: 70px;
+  margin-left: 72px;
 }
 .footer-social-title {
   display: block;
@@ -408,7 +410,7 @@ img {
 }
 .modal-form-sub {
   display: block;
-  position: relative;
+  align-items: baseline;
   margin-left: auto;
 }
 .sub-title {
