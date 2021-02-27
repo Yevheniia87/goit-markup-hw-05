@@ -103,7 +103,7 @@ img {
   margin-right: 50px;
 }
 .navigation-list-link {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.02em;
@@ -133,7 +133,7 @@ img {
 }
 .mail-link {
   display: flex;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.02em;
@@ -161,7 +161,7 @@ img {
 }
 .tel-link {
   display: flex;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.02em;
@@ -205,7 +205,7 @@ img {
 }
 .btn-list-link {
   display: block;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.625;
   text-align: center;
@@ -303,7 +303,7 @@ img {
   color: #212121;
 }
 .description {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
@@ -348,7 +348,7 @@ img {
 }
 
 .address {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
